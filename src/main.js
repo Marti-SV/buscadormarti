@@ -1,8 +1,7 @@
 // Components
 import { createApp } from "vue";
 import { createRouter, createWebHistory } from "vue-router";
-import Chat from "./components/Chat.vue";
-import Biblioteca from "@/components/Biblioteca.vue";
+import LandingPage from "@/components/LandingPage.vue";
 import App from "./App.vue";
 
 // Plugins
@@ -11,8 +10,7 @@ import { registerPlugins } from "@/plugins";
 const router = createRouter({
   history: createWebHistory(),
   routes: [
-    { path: "/chat", component: Chat },
-    { path: "/", component: Biblioteca },
+    { path: "/", component: LandingPage },
   ],
 });
 
